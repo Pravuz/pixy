@@ -25,8 +25,9 @@
 #include "exec.h"
 #include "camera.h"
 #include "progvideo.h"
-#include "progblobs.h"
-#include "progpt.h"
+//#include "progblobs.h"
+//#include "progpt.h"
+#include "proggreyshades.h"
 #include "param.h"
 #include "serial.h"
 #include "flash_config.h"
@@ -102,9 +103,10 @@ int main(void)
 #endif
 
 #if 1
-	exec_addProg(&g_progBlobs);
-	ptLoadParams();
-	exec_addProg(&g_progPt);
+	//exec_addProg(&g_progBlobs);
+	//ptLoadParams();
+	//exec_addProg(&g_progPt);
+	exec_addProg(&g_progGreyshades);
 	exec_addProg(&g_progVideo, true);
 	exec_loop();
 #endif
