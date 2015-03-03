@@ -2,19 +2,19 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="com.crt.advproject.config.lib.release.697065728;com.crt.advproject.config.lib.release.697065728.;com.crt.advproject.cpp.lib.release.661030452;com.crt.advproject.compiler.cpp.input.1282763143">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/c++/4.8.4"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/c++/4.8.4/arm-none-eabi"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/c++/4.8.4/backward"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.8.4/include"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.8.4/include-fixed"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include/c++/4.9.3"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include/c++/4.9.3/arm-none-eabi"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include/c++/4.9.3/backward"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.9.3/include"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.9.3/include-fixed"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__cplusplus=199711L"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
-<definedSymbol symbol="__GNUC_MINOR__=8"/>
-<definedSymbol symbol="__GNUC_PATCHLEVEL__=4"/>
-<definedSymbol symbol="__VERSION__=&quot;4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]&quot;"/>
+<definedSymbol symbol="__GNUC_MINOR__=9"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.3 20141119 (release) [ARM/embedded-4_9-branch revision 218278]&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -74,9 +74,12 @@
 <definedSymbol symbol="__UINT_FAST64_TYPE__=long long unsigned int"/>
 <definedSymbol symbol="__INTPTR_TYPE__=int"/>
 <definedSymbol symbol="__UINTPTR_TYPE__=unsigned int"/>
+<definedSymbol symbol="__has_include(STR)=__has_include__(STR)"/>
+<definedSymbol symbol="__has_include_next(STR)=__has_include_next__(STR)"/>
 <definedSymbol symbol="__GXX_WEAK__=1"/>
 <definedSymbol symbol="__DEPRECATED=1"/>
 <definedSymbol symbol="__GXX_RTTI=1"/>
+<definedSymbol symbol="__cpp_binary_literals=201304"/>
 <definedSymbol symbol="__EXCEPTIONS=1"/>
 <definedSymbol symbol="__GXX_ABI_VERSION=1002"/>
 <definedSymbol symbol="__SCHAR_MAX__=127"/>
@@ -130,6 +133,8 @@
 <definedSymbol symbol="__UINT_FAST64_MAX__=18446744073709551615ULL"/>
 <definedSymbol symbol="__INTPTR_MAX__=2147483647"/>
 <definedSymbol symbol="__UINTPTR_MAX__=4294967295U"/>
+<definedSymbol symbol="__GCC_IEC_559=0"/>
+<definedSymbol symbol="__GCC_IEC_559_COMPLEX=0"/>
 <definedSymbol symbol="__FLT_EVAL_METHOD__=0"/>
 <definedSymbol symbol="__DEC_EVAL_METHOD__=2"/>
 <definedSymbol symbol="__FLT_RADIX__=2"/>
@@ -333,6 +338,7 @@
 <definedSymbol symbol="__SIZEOF_WCHAR_T__=4"/>
 <definedSymbol symbol="__SIZEOF_WINT_T__=4"/>
 <definedSymbol symbol="__SIZEOF_PTRDIFF_T__=4"/>
+<definedSymbol symbol="__ARM_32BIT_STATE=1"/>
 <definedSymbol symbol="__ARM_SIZEOF_MINIMAL_ENUM=1"/>
 <definedSymbol symbol="__ARM_SIZEOF_WCHAR_T=32"/>
 <definedSymbol symbol="__arm__=1"/>
@@ -356,19 +362,19 @@
 </instance>
 <instance id="com.crt.advproject.config.lib.release.697065728;com.crt.advproject.config.lib.release.697065728.;com.crt.advproject.gcc.lib.release.1301060165;com.crt.advproject.compiler.input.1230964426">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/c++/4.8.4"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/c++/4.8.4/arm-none-eabi"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/c++/4.8.4/backward"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.8.4/include"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.8.4/include-fixed"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include/c++/4.9.3"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include/c++/4.9.3/arm-none-eabi"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include/c++/4.9.3/backward"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.9.3/include"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.9.3/include-fixed"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__cplusplus=199711L"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
-<definedSymbol symbol="__GNUC_MINOR__=8"/>
-<definedSymbol symbol="__GNUC_PATCHLEVEL__=4"/>
-<definedSymbol symbol="__VERSION__=&quot;4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]&quot;"/>
+<definedSymbol symbol="__GNUC_MINOR__=9"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.3 20141119 (release) [ARM/embedded-4_9-branch revision 218278]&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -428,9 +434,12 @@
 <definedSymbol symbol="__UINT_FAST64_TYPE__=long long unsigned int"/>
 <definedSymbol symbol="__INTPTR_TYPE__=int"/>
 <definedSymbol symbol="__UINTPTR_TYPE__=unsigned int"/>
+<definedSymbol symbol="__has_include(STR)=__has_include__(STR)"/>
+<definedSymbol symbol="__has_include_next(STR)=__has_include_next__(STR)"/>
 <definedSymbol symbol="__GXX_WEAK__=1"/>
 <definedSymbol symbol="__DEPRECATED=1"/>
 <definedSymbol symbol="__GXX_RTTI=1"/>
+<definedSymbol symbol="__cpp_binary_literals=201304"/>
 <definedSymbol symbol="__EXCEPTIONS=1"/>
 <definedSymbol symbol="__GXX_ABI_VERSION=1002"/>
 <definedSymbol symbol="__SCHAR_MAX__=127"/>
@@ -484,6 +493,8 @@
 <definedSymbol symbol="__UINT_FAST64_MAX__=18446744073709551615ULL"/>
 <definedSymbol symbol="__INTPTR_MAX__=2147483647"/>
 <definedSymbol symbol="__UINTPTR_MAX__=4294967295U"/>
+<definedSymbol symbol="__GCC_IEC_559=0"/>
+<definedSymbol symbol="__GCC_IEC_559_COMPLEX=0"/>
 <definedSymbol symbol="__FLT_EVAL_METHOD__=0"/>
 <definedSymbol symbol="__DEC_EVAL_METHOD__=2"/>
 <definedSymbol symbol="__FLT_RADIX__=2"/>
@@ -687,6 +698,7 @@
 <definedSymbol symbol="__SIZEOF_WCHAR_T__=4"/>
 <definedSymbol symbol="__SIZEOF_WINT_T__=4"/>
 <definedSymbol symbol="__SIZEOF_PTRDIFF_T__=4"/>
+<definedSymbol symbol="__ARM_32BIT_STATE=1"/>
 <definedSymbol symbol="__ARM_SIZEOF_MINIMAL_ENUM=1"/>
 <definedSymbol symbol="__ARM_SIZEOF_WCHAR_T=32"/>
 <definedSymbol symbol="__arm__=1"/>
@@ -710,19 +722,19 @@
 </instance>
 <instance id="com.crt.advproject.config.lib.release.697065728;com.crt.advproject.config.lib.release.697065728.;com.crt.advproject.gas.lib.release.79134804;com.crt.advproject.assembler.input.1120345264">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/c++/4.8.4"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/c++/4.8.4/arm-none-eabi"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/c++/4.8.4/backward"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.8.4/include"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.8.4/include-fixed"/>
-<includePath path="c:/nxp/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include/c++/4.9.3"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include/c++/4.9.3/arm-none-eabi"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include/c++/4.9.3/backward"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.9.3/include"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.9.3/include-fixed"/>
+<includePath path="c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/arm-none-eabi/include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__cplusplus=199711L"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__GNUC__=4"/>
-<definedSymbol symbol="__GNUC_MINOR__=8"/>
-<definedSymbol symbol="__GNUC_PATCHLEVEL__=4"/>
-<definedSymbol symbol="__VERSION__=&quot;4.8.4 20140526 (release) [ARM/embedded-4_8-branch revision 211358]&quot;"/>
+<definedSymbol symbol="__GNUC_MINOR__=9"/>
+<definedSymbol symbol="__GNUC_PATCHLEVEL__=3"/>
+<definedSymbol symbol="__VERSION__=&quot;4.9.3 20141119 (release) [ARM/embedded-4_9-branch revision 218278]&quot;"/>
 <definedSymbol symbol="__ATOMIC_RELAXED=0"/>
 <definedSymbol symbol="__ATOMIC_SEQ_CST=5"/>
 <definedSymbol symbol="__ATOMIC_ACQUIRE=2"/>
@@ -782,9 +794,12 @@
 <definedSymbol symbol="__UINT_FAST64_TYPE__=long long unsigned int"/>
 <definedSymbol symbol="__INTPTR_TYPE__=int"/>
 <definedSymbol symbol="__UINTPTR_TYPE__=unsigned int"/>
+<definedSymbol symbol="__has_include(STR)=__has_include__(STR)"/>
+<definedSymbol symbol="__has_include_next(STR)=__has_include_next__(STR)"/>
 <definedSymbol symbol="__GXX_WEAK__=1"/>
 <definedSymbol symbol="__DEPRECATED=1"/>
 <definedSymbol symbol="__GXX_RTTI=1"/>
+<definedSymbol symbol="__cpp_binary_literals=201304"/>
 <definedSymbol symbol="__EXCEPTIONS=1"/>
 <definedSymbol symbol="__GXX_ABI_VERSION=1002"/>
 <definedSymbol symbol="__SCHAR_MAX__=127"/>
@@ -838,6 +853,8 @@
 <definedSymbol symbol="__UINT_FAST64_MAX__=18446744073709551615ULL"/>
 <definedSymbol symbol="__INTPTR_MAX__=2147483647"/>
 <definedSymbol symbol="__UINTPTR_MAX__=4294967295U"/>
+<definedSymbol symbol="__GCC_IEC_559=0"/>
+<definedSymbol symbol="__GCC_IEC_559_COMPLEX=0"/>
 <definedSymbol symbol="__FLT_EVAL_METHOD__=0"/>
 <definedSymbol symbol="__DEC_EVAL_METHOD__=2"/>
 <definedSymbol symbol="__FLT_RADIX__=2"/>
@@ -1041,6 +1058,7 @@
 <definedSymbol symbol="__SIZEOF_WCHAR_T__=4"/>
 <definedSymbol symbol="__SIZEOF_WINT_T__=4"/>
 <definedSymbol symbol="__SIZEOF_PTRDIFF_T__=4"/>
+<definedSymbol symbol="__ARM_32BIT_STATE=1"/>
 <definedSymbol symbol="__ARM_SIZEOF_MINIMAL_ENUM=1"/>
 <definedSymbol symbol="__ARM_SIZEOF_WCHAR_T=32"/>
 <definedSymbol symbol="__arm__=1"/>

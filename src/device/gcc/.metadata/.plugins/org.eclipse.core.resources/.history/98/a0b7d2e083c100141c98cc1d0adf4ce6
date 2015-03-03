@@ -1,0 +1,85 @@
+src/serial.o src/serial.d: ../src/serial.cpp \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/serial.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/iserial.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/spi.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx_ssp.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cm4.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cmInstr.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cmFunc.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cm4_simd.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/system_LPC43xx.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc_types.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/i2c.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx_i2c.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc_types.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/uart.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx_uart.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/analogdig.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/conncomp.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/chirp.hpp \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/link.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/blob.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/blobs.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/blob.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/colorlut.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/pixytypes.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/qqueue.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/param.h
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/serial.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/iserial.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/spi.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx_ssp.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cm4.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cmInstr.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cmFunc.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cm4_simd.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/system_LPC43xx.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc_types.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/i2c.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx_i2c.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc_types.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/uart.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx_uart.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/analogdig.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/conncomp.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/chirp.hpp:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/link.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/blob.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/blobs.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/blob.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/colorlut.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/pixytypes.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/qqueue.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/param.h:

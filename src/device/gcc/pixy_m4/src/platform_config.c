@@ -21,6 +21,7 @@
 #include "lpc_types.h"
 #include "spifi_rom_api.h"
 
+#include "lpc43xx.h"
 SPIFIobj g_spifi;
 
 /**********************************************************************

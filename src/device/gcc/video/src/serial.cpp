@@ -17,8 +17,6 @@
 #include "spi.h"
 #include "i2c.h"
 #include "uart.h"
-#include "analogdig.h"
-#include "conncomp.h"
 #include "param.h"
 
 static uint8_t g_interface = 0;
@@ -26,7 +24,9 @@ static Iserial *g_serial = 0;
 
 uint32_t callback(uint8_t *data, uint32_t len)
 {
-	return g_blobs->getBlock(data, len);
+	//todo: add callback to greyshades
+	//return g_blobs->getBlock(data, len);
+	return 0;
 }
 
 
@@ -35,7 +35,6 @@ int ser_init()
 	i2c_init(callback);
 	spi_init(callback);
 	uart_init(callback);
-	ad_init();
 
 	ser_loadParams();
 		
@@ -46,8 +45,8 @@ void ser_loadParams()
 {
 	prm_add("Data out port", 0, 
 		"@c Interface Selects the port that's used to output data, 0=SPI, 1=I2C, 2=UART, 3=analog/digital x, 4=analog/digital y (default 0)", UINT8(0), END);
-	prm_add("I2C address", PRM_FLAG_HEX_FORMAT, 
-		"@c Interface Sets the I2C address if you are using I2C data out port. (default 0x54)", UINT8(I2C_DEFAULT_SLAVE_ADDR), END);
+	//prm_add("I2C address", PRM_FLAG_HEX_FORMAT,
+		//"@c Interface Sets the I2C address if you are using I2C data out port. (default 0x54)", UINT8(I2C_DEFAULT_SLAVE_ADDR), END);
 	prm_add("UART baudrate", 0, 
 		"@c Interface Sets the UART baudrate if you are using UART data out port. (default 19200)", UINT32(19200), END);
 
@@ -83,17 +82,16 @@ int ser_setInterface(uint8_t interface)
 	case SER_INTERFACE_UART:    
 		g_serial = g_uart0;
 		break;
-
+#if 0
 	case SER_INTERFACE_ADX:      
 		g_ad->setDirection(true);
 		g_serial = g_ad;
 		break;
-
 	case SER_INTERFACE_ADY:
 		g_ad->setDirection(false);
 		g_serial = g_ad;
 		break;		
-
+#endif
 	default:
 	case SER_INTERFACE_SPI:
 		g_serial = g_spi;

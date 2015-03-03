@@ -18,18 +18,14 @@
 #include "camera.h"
 #include "serial.h"
 #include "param.h"
-#include "qqueue.h"
 
-Program g_progGreyshades = {
-		"grey",
-		"perform shades of grey analysis",
-		greySetup,
-		greyLoop
-};
+Program g_progGreyshades = { "grey", "perform shades of grey analysis",
+		greySetup, greyLoop };
 
 static GreyShades g_greyShades((uint8_t *) LAST_REGION_MEMORY);
-Qqueue *m_qqueue;
+GreyShades *g_gShades = &g_greyShades;
 GreyRegion currentRegion;
+Point16 m_medianVector;
 
 GreyShades::GreyShades(uint8_t *lastRegionMem) {
 	m_lastRegion = lastRegionMem;
@@ -51,53 +47,62 @@ void GreyShades::setParams(const uint8_t deltaP, const uint32_t nOfP) {
 		this->nOfP = nOfP;
 }
 
+void GreyShades::setMute(const bool mute) {
+	m_mutex = mute;
+}
+
 void GreyShades::handleImage() {
-	uint8_t len = 36;
 	uint8_t *frame = (uint8_t *) SRAM1_LOC;
+	int response;
 
 	switch (currentRegion) {
 	case REG_A1:
-		cam_getFrame(frame + len, SRAM1_SIZE - len, CAM_GRAB_M1R2, 0,
+		response = cam_getFrame(frame, SRAM1_SIZE, CAM_GRAB_M1R2, 0,
 		REGION_A_OFFSET_Y, REGIONS_WIDTH, REGION_AC_HEIGHT);
-		convertRawToGrey(false);
+		if (response != 0)
+			convertRawToGrey(false);
 		currentRegion = REG_A2; // Finished with this region
 		break;
 	case REG_A2:
-		cam_getFrame(frame + len, SRAM1_SIZE - len, CAM_GRAB_M1R2, 0,
+		response = cam_getFrame(frame, SRAM1_SIZE, CAM_GRAB_M1R2, 0,
 		REGION_A_OFFSET_Y, REGIONS_WIDTH, REGION_AC_HEIGHT);
-		convertRawToGrey(true);
+		if (response != 0)
+			convertRawToGrey(true);
 		separateObjects();
 		currentRegion = REG_B1; // Finished with this region
 		break;
 	case REG_B1:
-		cam_getFrame(frame + len, SRAM1_SIZE - len, CAM_GRAB_M1R2, 0,
+		response = cam_getFrame(frame, SRAM1_SIZE, CAM_GRAB_M1R2, 0,
 		REGION_B_OFFSET_Y, REGIONS_WIDTH, REGION_B_HEIGHT);
-		convertRawToGrey(false);
+		if (response != 0)
+			convertRawToGrey(false);
 		currentRegion = REG_B2; // Finished with this region
 		break;
 	case REG_B2:
-		cam_getFrame(frame + len, SRAM1_SIZE - len, CAM_GRAB_M1R2, 0,
+		response = cam_getFrame(frame, SRAM1_SIZE, CAM_GRAB_M1R2, 0,
 		REGION_B_OFFSET_Y, REGIONS_WIDTH, REGION_B_HEIGHT);
-		convertRawToGrey(true);
+		if (response != 0)
+			convertRawToGrey(true);
 		separateObjects();
 		currentRegion = REG_C1; // Finished with this region
 		break;
 	case REG_C1:
-		cam_getFrame(frame + len, SRAM1_SIZE - len, CAM_GRAB_M1R2, 0,
+		response = cam_getFrame(frame, SRAM1_SIZE, CAM_GRAB_M1R2, 0,
 		REGION_C_OFFSET_Y, REGIONS_WIDTH, REGION_AC_HEIGHT);
-		convertRawToGrey(false);
+		if (response != 0)
+			convertRawToGrey(false);
 		currentRegion = REG_C2; // Finished with this region
 		break;
 	case REG_C2:
-		cam_getFrame(frame + len, SRAM1_SIZE - len, CAM_GRAB_M1R2, 0,
+		response = cam_getFrame(frame, SRAM1_SIZE, CAM_GRAB_M1R2, 0,
 		REGION_C_OFFSET_Y, REGIONS_WIDTH, REGION_AC_HEIGHT);
-		convertRawToGrey(true);
+		if (response != 0)
+			convertRawToGrey(true);
 		separateObjects();
 		currentRegion = FINISHED; // Finished with this region
 		break;
 	case FINISHED:
 		objCalcs();
-		//todo: send vector to arduino via UART/SPI/I2C.
 		currentRegion = REG_A1; // Restart.
 		break;
 	}
@@ -170,10 +175,6 @@ void GreyShades::convertRawToGrey(const bool compare) {
 	}
 }
 
-void GreyShades::objCalcs() {
-	// find largest object and calc midpoint and vector to crosshair.
-}
-
 void GreyShades::separateObjects() {
 	bool noMatchFound = true;
 	Point16 point; //curent pixel point.
@@ -183,12 +184,18 @@ void GreyShades::separateObjects() {
 
 	for (int y = 2; y <= height; y++)
 		for (int x = 2; x <= REGIONS_WIDTH - 4; x++) {
-			if (m_lastRegion[(REGIONS_WIDTH - 4)*y + x] != 0x00)
+			if (m_lastRegion[(REGIONS_WIDTH - 4) * y + x] != 0x00)
 				continue; //skip this iteration, this pixel doesn't have a change.
 
 			noMatchFound = true;
 			point.m_x = x;
 			point.m_y = y;
+			if (currentRegion == REG_A2)
+				point.m_y += REGION_A_OFFSET_Y;
+			if (currentRegion == REG_B2)
+				point.m_y += REGION_B_OFFSET_Y;
+			if (currentRegion == REG_C2)
+				point.m_y += REGION_C_OFFSET_Y;
 
 			// loops trough existing objects, checking if this pixel may belong to one of the detected objects.
 			if (!m_DetectedObjects.empty()) {
@@ -200,35 +207,181 @@ void GreyShades::separateObjects() {
 				}
 			}
 			if (noMatchFound)
-				m_DetectedObjects.push_back(DetectedObject(point, point)); //this pixels belongs in a new object.
+				m_DetectedObjects.push_back(DetectedObject(point)); //this pixels belongs in a new object.
 		}
+}
+
+void GreyShades::objCalcs() {
+	// find largest object and calc midpoint and vector to crosshair.
+	// If there is absolutely no movement detected, theres no need to do any further calculations.
+	if (m_DetectedObjects.empty())
+		return;
+	DetectedObject m_largestObj = m_DetectedObjects.front();
+	m_DetectedObjects.pop_front();
+	if (!m_DetectedObjects.empty())
+		for (std::list<DetectedObject>::iterator i = m_DetectedObjects.begin();
+				i != m_DetectedObjects.end(); i++)
+			if (m_largestObj.objPixels < i->objPixels)
+				m_largestObj = *i;
+
+	// memory leakage deluxe if we don't clear this after each image is produced.
+	// this is also the most reasonable (if not the only) place where we can safely clear the list.
+	m_DetectedObjects.clear();
+
+	Point16 m_vector;
+
+	m_vector.m_x = X_CENTER
+			- (((m_largestObj.bottomRight.m_x - m_largestObj.topLeft.m_x) >> 1)
+					+ m_largestObj.topLeft.m_x);
+	m_vector.m_y = Y_CENTER
+			- (((m_largestObj.topLeft.m_y - m_largestObj.bottomRight.m_y) >> 1)
+					+ m_largestObj.bottomRight.m_y);
+
+	if (m_vectorsToCenter.size() == 5) {
+		std::list<int> medianOfVTC_x, medianOfVTC_y;
+		for (std::list<Point16>::iterator i = m_vectorsToCenter.begin();
+				i != m_vectorsToCenter.end(); i++) {
+			medianOfVTC_x.push_back(i->m_x);
+			medianOfVTC_y.push_back(i->m_y);
+		}
+
+		medianOfVTC_x.sort();
+		medianOfVTC_y.sort();
+
+		//getting median X vector
+		medianOfVTC_x.pop_front();
+		medianOfVTC_x.pop_front();
+		m_medianVector.m_x = medianOfVTC_x.front();
+
+		//getting median Y vector
+		medianOfVTC_y.pop_front();
+		medianOfVTC_y.pop_front();
+		m_medianVector.m_y = medianOfVTC_y.front();
+
+		// We now have a vector ready for arduino
+		m_mutex = false;
+	}
+
+	m_vectorsToCenter.push_back(m_vector);
+	while (m_vectorsToCenter.size() > 5)
+		m_vectorsToCenter.pop_front();
+
+}
+
+uint32_t GreyShades::spiCallback(uint8_t *buf, uint32_t buflen) {
+	uint16_t *buf16 = (uint16_t *) buf;
+	uint16_t len = 7;  // default
+
+	if (buflen < 8 * sizeof(uint16_t))
+		return 0;
+	if (m_mutex) {
+		buf16[0] = 0;
+		buf16[1] = 0;
+		return 2;
+	}
+
+	//buf16[0] = 0xaa55; //begin marker
+	len++;
+
+	for (int i = 0; i < 8; i++) {
+		if (i & 1)
+			buf16[i] = m_medianVector.m_y;
+		else
+			buf16[i] = m_medianVector.m_x;
+	}
+
+	m_mutex = true;
+	return len * sizeof(uint16_t);
 }
 
 int greySetup() {
 	//initial currentRegion
 	currentRegion = REG_A1;
-
 	// setup camera mode
-	cam_setMode(CAM_MODE1);
+	cam_setMode(CAM_MODE0); //not running 1 for some reason, what does modes entail?
 
 	// load parameters
 	greyLoadParams();
 
+	//init vector
+	m_medianVector.m_x = 0;
+	m_medianVector.m_y = 0;
+
+#if 0 //fucks with my shit
 	// setup qqueue and M0
-	m_qqueue = new Qqueue;
+	m_qqueue = new Qqueue;//when/where do i use qqueue?
 	m_qqueue->flush();
+
+	//does this need exec_init(*chirp) and cam_mode1 ?
 	exec_runM0(0);
 
+
+	// flush serial receive queue
+	uint8_t c;
+	while (ser_getSerial()->receive(&c, 1))
+		;
+#endif
 	return 0;
 }
 
 int greyLoop() {
+	//handle images in parts.
 	g_greyShades.handleImage();
-	//call handleImage();
+
+	//handle serial recieve data
+	//serialReceive();
+
+	//update serial buffer
+	//ser_getSerial()->update();
+
 	return 0;
 }
 
+void serialReceive() {
+
+	//todo Handle commands and parameters from arduino.
+#if 0
+	uint8_t i, a;
+	static uint8_t state=0, b=1;
+	uint16_t s0, s1;
+	Iserial *serial = ser_getSerial();
+
+	for (i=0; i<10; i++)
+	{
+		switch(state)
+		{
+			case 0: // look for sync
+			if(serial->receive(&a, 1)<1)
+			return;
+			if (a==0xff && b==0x00)
+			state = 1;
+			b = a;
+			break;
+
+			case 1:// read rest of data
+			if (serial->receiveLen()>=4)
+			{
+				serial->receive((uint8_t *)&s0, 2);
+				serial->receive((uint8_t *)&s1, 2);
+
+				//cprintf("servo %d %d\n", s0, s1);
+				rcs_setPos(0, s0);
+				rcs_setPos(1, s1);
+
+				state = 0;
+			}
+			break;
+
+			default:
+			state = 0;
+			break;
+		}
+	}
+#endif
+}
+
 void greyLoadParams() {
+#if 0 //fuck off params
 	prm_add("Pixel-change treshold", 0,
 			"@c 4-20 recommended. Depends on weather, lighting etc. (default 15)",
 			UINT8(15), END);
@@ -241,4 +394,9 @@ void greyLoadParams() {
 	prm_get("Pixel-change treshold", &g_deltaP, END);
 	prm_get("Pixel-change cutoff", &g_nOfP, END);
 	g_greyShades.setParams(g_deltaP, g_nOfP);
+#endif
+	//default params.
+	g_greyShades.setParams(15,10500);
+	//mute callback until we have something to return
+	g_greyShades.setMute(true);
 }

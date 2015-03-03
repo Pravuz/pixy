@@ -1,0 +1,40 @@
+src/lpc43xx_i2c.o src/lpc43xx_i2c.d: ../src/lpc43xx_i2c.c \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx_i2c.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cm4.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cmInstr.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cmFunc.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cm4_simd.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/system_LPC43xx.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc_types.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx_cgu.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc_types.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx_scu.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx_libcfg_default.h
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx_i2c.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cm4.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cmInstr.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cmFunc.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/core_cm4_simd.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/system_LPC43xx.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc_types.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx_cgu.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc_types.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/lpc43xx_scu.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/lpc43xx_libcfg_default.h:

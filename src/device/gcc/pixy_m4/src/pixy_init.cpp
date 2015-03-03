@@ -19,7 +19,6 @@
 #include "platform_config.h"
 #include "param.h"
 #include "camera.h"
-#include "rcservo.h"
 #include "led.h"	  
 #include "power.h"
 #include "misc.h"
@@ -27,64 +26,60 @@
 Chirp *g_chirpUsb = NULL;
 Chirp *g_chirpM0 = NULL;
 
-void ADCInit()
-{
+void ADCInit() {
 	ADC_Init(LPC_ADC0, 200000, 10);
-	ADC_IntConfig(LPC_ADC0,ADC_ADINTEN1,DISABLE);
+	ADC_IntConfig(LPC_ADC0, ADC_ADINTEN1, DISABLE);
 }
 
-void SCTInit()
-{
+void SCTInit() {
 	// RC servo
-	LPC_SCT->CTRL_L |= 1<<2; // set halt 
-	LPC_SCT->CTRL_L &= ~(255<<5); // reset prescaler
-	LPC_SCT->CTRL_L |= 203<<5; // prescale (create a 1 MHz clock)
-	LPC_SCT->LIMIT_L = 1<<0; // event 0 resets counter
+	LPC_SCT->CTRL_L |= 1 << 2; // set halt
+	LPC_SCT->CTRL_L &= ~(255 << 5); // reset prescaler
+	LPC_SCT->CTRL_L |= 203 << 5; // prescale (create a 1 MHz clock)
+	LPC_SCT->LIMIT_L = 1 << 0; // event 0 resets counter
 
-  	LPC_SCT->OUTPUT = 0x0;
+	LPC_SCT->OUTPUT = 0x0;
 	LPC_SCT->CONFIG &= ~0x01; // set UNITY=0, default clk source, bus clock
 
 	LPC_SCT->MATCH[0].L = 20000; // 4000;
 	LPC_SCT->MATCHREL[0].L = 20000; // 4000;
-	LPC_SCT->EVENT[0].CTRL = 0 | 1<<12;
-	LPC_SCT->EVENT[1].CTRL = 1 | 1<<12;
-	LPC_SCT->EVENT[0].STATE = 1<<0; // event 0 is enabled in state 0
-	LPC_SCT->EVENT[1].STATE = 1<<0; // event 1 is enabled in state 0
+	LPC_SCT->EVENT[0].CTRL = 0 | 1 << 12;
+	LPC_SCT->EVENT[1].CTRL = 1 | 1 << 12;
+	LPC_SCT->EVENT[0].STATE = 1 << 0; // event 0 is enabled in state 0
+	LPC_SCT->EVENT[1].STATE = 1 << 0; // event 1 is enabled in state 0
 
-	LPC_SCT->EVENT[2].CTRL = 2 | 1<<12;
-	LPC_SCT->EVENT[2].STATE = 1<<0; // event 2 is enabled in state 0
+	LPC_SCT->EVENT[2].CTRL = 2 | 1 << 12;
+	LPC_SCT->EVENT[2].STATE = 1 << 0; // event 2 is enabled in state 0
 
 	// RGB led
-	LPC_SCT->CTRL_H |= 1<<2; // set halt 
-	LPC_SCT->CTRL_H &= ~(255<<5); // reset prescaler
-	LPC_SCT->CTRL_H |= 9<<5; // prescale (create a 1 MHz clock)
-	LPC_SCT->LIMIT_H = 1<<3; // event 3 resets counter
+	LPC_SCT->CTRL_H |= 1 << 2; // set halt
+	LPC_SCT->CTRL_H &= ~(255 << 5); // reset prescaler
+	LPC_SCT->CTRL_H |= 9 << 5; // prescale (create a 1 MHz clock)
+	LPC_SCT->LIMIT_H = 1 << 3; // event 3 resets counter
 
 	LPC_SCT->MATCH[0].H = 0xffff;
 	LPC_SCT->MATCHREL[0].H = 0xffff;
-	LPC_SCT->EVENT[3].CTRL = 0 | 1<<4 | 1<<12;
-	LPC_SCT->EVENT[3].STATE = 1<<0; // event 3 is enabled in state 0
+	LPC_SCT->EVENT[3].CTRL = 0 | 1 << 4 | 1 << 12;
+	LPC_SCT->EVENT[3].STATE = 1 << 0; // event 3 is enabled in state 0
 
 	// red
-	LPC_SCT->EVENT[4].CTRL = 1 | 1<<4 | 1<<12;
-	LPC_SCT->EVENT[4].STATE = 1<<0; // event 4 is enabled in state 0
+	LPC_SCT->EVENT[4].CTRL = 1 | 1 << 4 | 1 << 12;
+	LPC_SCT->EVENT[4].STATE = 1 << 0; // event 4 is enabled in state 0
 
 	// green
-	LPC_SCT->EVENT[5].CTRL = 2 | 1<<4 | 1<<12;
-	LPC_SCT->EVENT[5].STATE = 1<<0; // event 5 is enabled in state 0
+	LPC_SCT->EVENT[5].CTRL = 2 | 1 << 4 | 1 << 12;
+	LPC_SCT->EVENT[5].STATE = 1 << 0; // event 5 is enabled in state 0
 
 	// blue
-	LPC_SCT->EVENT[6].CTRL = 3 | 1<<4 | 1<<12;
-	LPC_SCT->EVENT[6].STATE = 1<<0; // event 6 is enabled in state 0
+	LPC_SCT->EVENT[6].CTRL = 3 | 1 << 4 | 1 << 12;
+	LPC_SCT->EVENT[6].STATE = 1 << 0; // event 6 is enabled in state 0
 
 	// start SCT timers
-	LPC_SCT->CTRL_L &= ~(1<<2);
-	LPC_SCT->CTRL_H &= ~(1<<2); 
+	LPC_SCT->CTRL_L &= ~(1 << 2);
+	LPC_SCT->CTRL_H &= ~(1 << 2);
 }
 
-
-void CameraInit(void)
-{
+void CameraInit(void) {
 	volatile uint32_t d;
 
 	LPC_GPIO_PORT->MASK[0] = 0;
@@ -95,13 +90,13 @@ void CameraInit(void)
 	// deal with pwdn
 	LPC_GPIO_PORT->PIN[0] = 0;
 	LPC_GPIO_PORT->PIN[0] |= 0x0004;
-	for (d=0; d<10000000; d++);
+	for (d = 0; d < 10000000; d++)
+		;
 	LPC_GPIO_PORT->PIN[0] &= ~(0x0004);
 
 }
 
-void GPIOInit(void)
-{
+void GPIOInit(void) {
 	// button, SPI_SSEL
 	LPC_GPIO_PORT->MASK[5] = 0;
 	LPC_GPIO_PORT->PIN[5] = 0x20; // negate SPI_SS
@@ -111,124 +106,139 @@ void GPIOInit(void)
 	LPC_GPIO_PORT->DIR[2] = 0;
 }
 
-void timerInit(void)
-{
+void timerInit(void) {
 	// set timer so we count clock cycles
 	LPC_TIMER1->IR = 0;
- 	LPC_TIMER1->TCR = 1;
+	LPC_TIMER1->TCR = 1;
 	LPC_TIMER1->PR = 0;
 
 	// microsecond timer
 	LPC_TIMER2->IR = 0;
- 	LPC_TIMER2->TCR = 1;
-	LPC_TIMER2->PR = CLKFREQ_US-1;
+	LPC_TIMER2->TCR = 1;
+	LPC_TIMER2->PR = CLKFREQ_US - 1;
 }
 
-
-void commonInit(void)
-{
+void commonInit(void) {
 	platformInit();
 	timerInit();
 	GPIOInit();
-	USB_UserInit();
+	//USB_UserInit();
 
-  	debug_frmwrk_init_clk(CLKFREQ);
-	lpc_printf("M4 start\n");
+	debug_frmwrk_init_clk(CLKFREQ);
+	//lpc_printf("M4 start\n");
 }
 
 #define AWB_TIMEOUT   3000*1000  // 3 seconds
 
-void handleAWB(void)
-{
+void handleAWB(void) {
 	static uint32_t timer;
 	static uint8_t state = 0;
-	
-	if (state==2)
+
+	if (state == 2)
 		return;
-	else if (state==0)
-	{
+	else if (state == 0) {
 		setTimer(&timer);
 		state = 1;
-	}
-	else if (state==1)
-	{
-		if (getTimer(timer)>AWB_TIMEOUT)
-		{
+	} else if (state == 1) {
+		if (getTimer(timer) > AWB_TIMEOUT) {
 			cam_setAWB(0);
-		 	state = 2;
+			state = 2;
 		}
 	}
 }
 
-void periodic(void)
-{
+void periodic(void) {
+#if 0 // hardfaulting since we've disabled all usb shit
 	// check to see if guard data still there
 //	if (STACK_GUARD != STACK_GUARD_WORD)
 //		showError(1, 0xffff00, "stack corruption\n");
 
-	while(g_chirpUsb->service());
+
+	while (g_chirpUsb->service())
+		;
+#endif
 	handleAWB();
 }
 
-//void pixyInit(uint32_t slaveRomStart, const unsigned char slaveImage[], uint32_t imageSize)
-void pixyInit(void)
-{
+void pixyInit(void) {
+
+#if 1 //Undergrad Robotics
+	commonInit();
+
+	IPC_haltSlave();
+
+	ADCInit(); //NEEDED? Yes, propably
+	CameraInit();
+
+	// run M0
+	cr_start_m0(SLAVE_M0APP, &__core_m0app_START__);
+
+
+	//USBLink *usbLink = new USBLink;
+	//g_chirpUsb = new Chirp(false, false, usbLink);
+	SMLink *smLink = new SMLink;
+	g_chirpM0 = new Chirp(false, true, smLink);
+
+	//prm_init(g_chirpM0);
+	//prm_init(g_chirpUsb);
+	pwr_init();
+	cam_init();
+#endif
+#if 0
 	// write stack guard word
- //	STACK_GUARD = STACK_GUARD_WORD;
+	//	STACK_GUARD = STACK_GUARD_WORD;
 
 	commonInit();
 
 	IPC_haltSlave();
 
 	ADCInit();
-   	SCTInit();
+	SCTInit();
 	CameraInit();
-/*	IPC_startSlave(); */
+	/*	IPC_startSlave(); */
 	// start slave
-/*	if (slaveRomStart && slaveImage && imageSize)
-	{
-		IPC_downloadSlaveImage(slaveRomStart, slaveImage, imageSize);
+	/*	if (slaveRomStart && slaveImage && imageSize)
+	 {
+	 IPC_downloadSlaveImage(slaveRomStart, slaveImage, imageSize);
 
-	} */
+	 } */
 
 	// initialize shared memory interface before running M0
 	SMLink *smLink = new SMLink;
 
 	// run M0
-    cr_start_m0(SLAVE_M0APP,&__core_m0app_START__);
+	cr_start_m0(SLAVE_M0APP,&__core_m0app_START__);
 
 	// initialize chirp objects
 	USBLink *usbLink = new USBLink;
 	g_chirpUsb = new Chirp(false, false, usbLink);
-  	g_chirpM0 = new Chirp(false, true, smLink);
+	g_chirpM0 = new Chirp(false, true, smLink);
 
 	// initialize devices/modules
 	led_init();
-	if (prm_init(g_chirpUsb)<0) // error, let user know (don't just continue like nothing's happened)
-		showError(1, 0x0000ff, "Flash is corrupt, parameters have been lost\n");
+	if (prm_init(g_chirpUsb)<0)// error, let user know (don't just continue like nothing's happened)
+	showError(1, 0x0000ff, "Flash is corrupt, parameters have been lost\n");
 	pwr_init();
 	cam_init();
 	rcs_init();
 	//cc_init();
+#endif
 }
 
-void pixySimpleInit(void)
-{
+void pixySimpleInit(void) {
 	commonInit();
 
 	USBLink *usbLink = new USBLink;
 	g_chirpUsb = new Chirp(false, false, usbLink);
 }
 
-void cprintf(const char *format, ...)
-{
-    char  buf[128];
-    va_list args;
-    va_start(args, format);
-    vsprintf((char *)buf, (char const *)format, args);
-    va_end(args);
+void cprintf(const char *format, ...) {
+	char buf[128];
+	va_list args;
+	va_start(args, format);
+	vsprintf((char *) buf, (char const *) format, args);
+	va_end(args);
 
 	CRP_SEND_XDATA(g_chirpUsb, HSTRING(buf));
 }
-
 

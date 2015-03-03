@@ -47,6 +47,8 @@
 								</option>
 								<option id="com.crt.advproject.cpp.fpu.1044471060" name="Floating point" superClass="com.crt.advproject.cpp.fpu" value="com.crt.advproject.cpp.fpu.fpv4" valueType="enumerated"/>
 								<option id="com.crt.advproject.cpp.hdrlib.2017040455" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" value="com.crt.advproject.cpp.hdrlib.newlibnano" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.allwarn.1573668495" superClass="gnu.cpp.compiler.option.warnings.allwarn" value="false" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.warnings.nowarn.2065657909" superClass="gnu.cpp.compiler.option.warnings.nowarn" value="true" valueType="boolean"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.1282763143" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.lib.release.1301060165" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.release">
@@ -69,6 +71,8 @@
 								<option id="com.crt.advproject.gcc.fpu.1001627556" name="Floating point" superClass="com.crt.advproject.gcc.fpu" value="com.crt.advproject.gcc.fpu.fpv4" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.hdrlib.621410826" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlibnano" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.lib.release.option.optimization.level.1960947667" name="Optimization Level" superClass="com.crt.advproject.gcc.lib.release.option.optimization.level" value="gnu.c.optimization.level.size" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.allwarn.1845935443" superClass="gnu.c.compiler.option.warnings.allwarn" value="false" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.warnings.nowarn.13332391" superClass="gnu.c.compiler.option.warnings.nowarn" value="true" valueType="boolean"/>
 								<inputType id="com.crt.advproject.compiler.input.1230964426" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.lib.release.79134804" name="MCU Assembler" superClass="com.crt.advproject.gas.lib.release">

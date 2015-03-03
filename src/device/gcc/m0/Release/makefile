@@ -29,7 +29,7 @@ all: m0.axf
 m0.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\CharmedLabs\cmucam\git\device\gcc\pixy_m0\Release" -Xlinker -Map="m0.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "m0_Release.ld" -o "m0.axf" $(OBJS) $(USER_OBJS) $(LIBS) && arm-none-eabi-objcopy --target elf32-littlearm --verbose --strip-all --redefine-sym __vectors_start__=__vectors_start___core_m0app --keep-symbol __vectors_start___core_m0app --rename-section .text=".core_m0app" --rename-section .data=".core_m0app.data" --rename-section .data_RAM2=".core_m0app.data_RAM2" --rename-section .data_RAM3=".core_m0app.data_RAM3" --rename-section .data_RAM4=".core_m0app.data_RAM4" --rename-section .data_RAM5=".core_m0app.data_RAM5" "m0.axf" "m0.axf.o"
+	arm-none-eabi-gcc -nostdlib -L"C:\Users\ouroborus\Dropbox\Bacheloroppgave 2015\Utvikling og Kode\Pixy_3_3_15\gcc\pixy_m0\Release" -Xlinker -Map="m0.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "m0_Release.ld" -o "m0.axf" $(OBJS) $(USER_OBJS) $(LIBS) && arm-none-eabi-objcopy --target elf32-littlearm --verbose --strip-all --redefine-sym __vectors_start__=__vectors_start___core_m0app --keep-symbol __vectors_start___core_m0app --rename-section .text=".core_m0app" --rename-section .data=".core_m0app.data" --rename-section .data_RAM2=".core_m0app.data_RAM2" --rename-section .data_RAM3=".core_m0app.data_RAM3" --rename-section .data_RAM4=".core_m0app.data_RAM4" --rename-section .data_RAM5=".core_m0app.data_RAM5" "m0.axf" "m0.axf.o"
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

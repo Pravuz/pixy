@@ -1,0 +1,7 @@
+src/colorlut.o src/colorlut.d: ../src/colorlut.cpp \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/colorlut.h \
+ C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/pixytypes.h
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\video\inc/colorlut.h:
+
+C:\Users\ouroborus\Dropbox\Bacheloroppgave\ 2015\Utvikling\ og\ Kode\Pixy_23_2_15\gcc\pixy_m4\inc/pixytypes.h:

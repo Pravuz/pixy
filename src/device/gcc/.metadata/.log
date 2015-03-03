@@ -1,0 +1,788 @@
+!SESSION 2015-03-03 09:38:41.008 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\ouroborus\Dropbox\Bacheloroppgave 2015\Utvikling og Kode\Pixy_3_3_15\gcc
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 09:38:52.596
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 09:38:53.340
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 09:38:55.350
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 09:38:55.351
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 09:38:56.675
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 09:38:57.345
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 09:39:03.330
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 09:40:15.971
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-03-03 09:40:44.970
+!MESSAGE Indexed 'pixy_m0' (6 sources, 21 headers) in 2,74 sec: 2 778 declarations; 3 856 references; 11 unresolved inclusions; 19 syntax errors; 1 819 unresolved names (22 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-03-03 09:40:49.584
+!MESSAGE Indexed 'pixy_m4' (25 sources, 71 headers) in 4,61 sec: 7 274 declarations; 12 723 references; 31 unresolved inclusions; 100 syntax errors; 5 405 unresolved names (21 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-03-03 09:40:58.029
+!MESSAGE Indexed 'video' (24 sources, 156 headers) in 8,44 sec: 10 961 declarations; 21 983 references; 0 unresolved inclusions; 9 syntax errors; 415 unresolved names (1,2 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-03-03 09:41:00.384
+!MESSAGE Indexed 'm0' (6 sources, 21 headers) in 2,35 sec: 2 508 declarations; 2 253 references; 8 unresolved inclusions; 11 syntax errors; 1 670 unresolved names (26 %)
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:01:51.635
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:01:51.688
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:01:52.702
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:01:52.704
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.jface 2 0 2015-03-03 10:04:06.821
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 10:04:06.822
+!MESSAGE A conflict occurred for ALT+CTRL+I:
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@156af66,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@156af66,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 10:04:06.822
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Renames the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@158bab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Renames the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@158bab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 10:04:06.822
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Opens an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@84c210,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Opens an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@84c210,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 10:04:06.822
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e0dbfe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e0dbfe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 10:04:06.822
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18b258f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18b258f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 10:04:06.822
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Searches for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f0ea6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Searches for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f0ea6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 10:04:06.822
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Searches for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b333f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Searches for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b333f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 10:04:06.822
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Opens the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d7e5b9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Opens the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d7e5b9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 10:04:06.822
+!MESSAGE A conflict occurred for CTRL+SHIFT+H:
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12ad8b4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12ad8b4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:04:06.825
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:23:39.557
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:23:55.117
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:26:23.249
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:33:07.266
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:34:40.911
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:40:26.241
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:41:36.493
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:41:44.431
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:41:44.467
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:42:03.982
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:42:26.115
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:42:37.049
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:43:11.682
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:44:31.707
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:44:45.459
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:44:48.923
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:44:58.659
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:52:51.007
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:54:34.423
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:54:43.798
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:55:47.290
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:55:47.332
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:56:01.292
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:56:10.334
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:56:14.771
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:56:16.679
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:56:19.719
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:56:37.151
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:56:51.911
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 10:57:05.605
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 0 2015-03-03 11:04:14.313
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Text.getText(Text.java:1351)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents$4$1.run(QuickAccessContents.java:579)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4273)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3360)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-03-03 11:04:22.237
+!MESSAGE Indexed 'video' (13 sources, 142 headers) in 7,07 sec: 9 674 declarations; 17 906 references; 0 unresolved inclusions; 9 syntax errors; 415 unresolved names (1,5 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-03-03 11:04:26.515
+!MESSAGE Indexed 'pixy_m4' (24 sources, 149 headers) in 4,26 sec: 7 521 declarations; 19 604 references; 0 unresolved inclusions; 18 syntax errors; 1 937 unresolved names (6,7 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-03-03 11:04:28.272
+!MESSAGE Indexed 'pixy_m0' (6 sources, 54 headers) in 1,75 sec: 4 384 declarations; 8 129 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-03-03 11:04:30.771
+!MESSAGE Indexed 'm0' (6 sources, 28 headers) in 2,5 sec: 3 047 declarations; 4 280 references; 0 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,055 %)
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:23:04.163
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:24:45.104
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:26:09.146
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:26:24.238
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:26:41.215
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:57:47.672
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:58:04.490
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:58:27.685
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:58:38.176
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:58:58.948
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:59:21.262
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:59:37.138
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 11:59:54.635
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:00:58.931
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:02:47.822
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY com.crt.log 1 0 2015-03-03 12:21:25.119
+!MESSAGE Drivers loaded in 897 milliseconds
+
+!ENTRY com.crt.log 1 0 2015-03-03 12:21:49.404
+!MESSAGE Drivers loaded in 908 milliseconds
+
+!ENTRY org.eclipse.debug.core 4 125 2015-03-03 12:22:12.399
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Source lookup error
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:172)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:505)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:785)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.performLookup(DsfSourceDisplayAdapter.java:203)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.run(DsfSourceDisplayAdapter.java:185)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Target not available.
+Contains: Target not available.
+!SUBENTRY 1 org.eclipse.debug.core 4 125 2015-03-03 12:22:12.400
+!MESSAGE Source lookup error
+!SUBENTRY 2 org.eclipse.cdt.dsf 4 10001 2015-03-03 12:22:12.400
+!MESSAGE Target not available.
+!SUBENTRY 2 org.eclipse.cdt.dsf 4 10001 2015-03-03 12:22:12.400
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:22:18.799
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:22:18.839
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:22:20.649
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:23:09.709
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:23:09.773
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:23:10.072
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:23:10.437
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:24:15.979
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:27:56.299
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:31:01.349
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:31:01.424
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:31:07.615
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:31:07.655
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:31:27.860
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:31:27.916
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:31:28.018
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:32:27.142
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY com.crt.dsfdebug 4 0 2015-03-03 12:34:05.499
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-03-03 12:34:05.499
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-03-03 12:34:05.499
+!MESSAGE Hardware Transfer Error
+
+!ENTRY com.crt.log 1 0 2015-03-03 12:35:08.052
+!MESSAGE Drivers loaded in 950 milliseconds
+
+!ENTRY com.crt.debugcommon 4 -1 2015-03-03 12:35:08.160
+!MESSAGE Error reported by server (redlinkserv.exe):
+RedlinkAPI: Hardware interface transfer error
+
+!ENTRY com.crt.log 1 0 2015-03-03 12:35:37.064
+!MESSAGE Drivers loaded in 888 milliseconds
+
+!ENTRY com.crt.debugcommon 4 -1 2015-03-03 12:35:37.187
+!MESSAGE Error reported by server (redlinkserv.exe):
+RedlinkAPI: Hardware interface transfer error
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:35:46.436
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY com.crt.dsfdebug 4 0 2015-03-03 12:35:48.541
+!MESSAGE 16: Target error from status-poll: Ee(FF). Undocumented error.
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-03-03 12:35:48.541
+!MESSAGE 16: Target error from status-poll: Ee(FF). Undocumented error.
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:36:00.596
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:36:24.790
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:36:33.669
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:36:35.035
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:37:53.898
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY com.crt.dsfdebug 4 0 2015-03-03 12:38:00.998
+!MESSAGE (crt_emu_cm_redlink) terminating due to loss of debug control
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-03-03 12:38:00.998
+!MESSAGE (crt_emu_cm_redlink) terminating due to loss of debug control
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:41:14.702
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:41:14.742
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:41:19.988
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:45:12.874
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:45:21.329
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:45:40.806
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:47:35.508
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:53:34.668
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:54:20.559
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:55:39.377
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:55:44.779
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:55:44.862
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:56:16.710
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:57:17.645
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 12:57:52.267
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY com.crt.dsfdebug 4 0 2015-03-03 13:04:01.385
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-03-03 13:04:01.385
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-03-03 13:04:01.385
+!MESSAGE Hardware Transfer Error
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-03-03 13:09:57.963
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@afb91d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Interrupt failed. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-03-03 13:09:57.963
+!MESSAGE Interrupt failed.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-03-03 13:10:20.661
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@1f270e3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Interrupt failed. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-03-03 13:10:20.661
+!MESSAGE Interrupt failed.
+
+!ENTRY com.crt.debugcommon 4 -1 2015-03-03 13:10:26.513
+!MESSAGE Error reported by server (redlinkserv.exe):
+RedlinkAPI: Hardware interface transfer error
+
+!ENTRY com.crt.log 1 0 2015-03-03 13:11:14.888
+!MESSAGE Drivers loaded in 858 milliseconds
+
+!ENTRY com.crt.debugcommon 4 -1 2015-03-03 13:11:15.049
+!MESSAGE Error reported by server (redlinkserv.exe):
+RedlinkAPI: Hardware interface transfer error
+
+!ENTRY com.crt.log 1 0 2015-03-03 13:11:43.745
+!MESSAGE Drivers loaded in 917 milliseconds
+
+!ENTRY com.crt.debugcommon 4 -1 2015-03-03 13:11:43.888
+!MESSAGE Error reported by server (redlinkserv.exe):
+RedlinkAPI: Hardware interface transfer error
+
+!ENTRY com.crt.log 1 0 2015-03-03 13:13:01.845
+!MESSAGE Drivers loaded in 729 milliseconds
+
+!ENTRY com.crt.debugcommon 4 -1 2015-03-03 13:13:01.993
+!MESSAGE Error reported by server (redlinkserv.exe):
+RedlinkAPI: Hardware interface transfer error
+
+!ENTRY com.crt.debugcommon 4 -1 2015-03-03 13:13:26.321
+!MESSAGE Error reported by server (redlinkserv.exe):
+RedlinkAPI: Hardware interface transfer error
+
+!ENTRY com.crt.log 1 0 2015-03-03 13:14:54.148
+!MESSAGE Drivers loaded in 858 milliseconds
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-03-03 13:15:02.663
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@15b688a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Interrupt failed. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-03-03 13:15:02.663
+!MESSAGE Interrupt failed.
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:15:07.983
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:15:13.721
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-03-03 13:16:13.973
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@1137f81): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-interpreter-exec console kill
+Error message from debugger back end:
+Can't kill process java.lang.Exception: Can't kill process' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-03-03 13:16:13.973
+!MESSAGE Failed to execute MI command:
+-interpreter-exec console kill
+Error message from debugger back end:
+Can't kill process
+!STACK 0
+java.lang.Exception: Can't kill process
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-03-03 13:16:23.327
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@11e026b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Interrupt failed. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-03-03 13:16:23.327
+!MESSAGE Interrupt failed.
+
+!ENTRY com.crt.dsfdebug 4 0 2015-03-03 13:16:32.299
+!MESSAGE (crt_emu_cm_redlink) terminating due to loss of debug control
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-03-03 13:16:32.300
+!MESSAGE (crt_emu_cm_redlink) terminating due to loss of debug control
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:17:10.105
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY com.crt.log 1 0 2015-03-03 13:17:44.448
+!MESSAGE Drivers loaded in 885 milliseconds
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:17:50.776
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:19:39.403
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:21:53.783
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:22:02.063
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:22:48.360
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:23:02.950
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:23:06.534
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:23:23.244
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:26:44.124
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY com.crt.log 1 0 2015-03-03 13:44:17.789
+!MESSAGE Drivers loaded in 882 milliseconds
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:46:30.094
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:46:30.134
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:46:31.033
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:46:35.152
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:48:39.469
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:49:03.628
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:50:00.250
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:50:00.298
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:51:51.012
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:52:02.487
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:52:24.689
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-03-03 13:53:57.292
+!MESSAGE Breakpoint already removed
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10005 2015-03-03 13:53:57.292
+!MESSAGE Breakpoint already removed
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:55:41.755
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:55:41.883
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.jface 2 0 2015-03-03 13:55:57.991
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-03 13:55:57.992
+!MESSAGE A conflict occurred for HOME:
+Binding(HOME,
+	ParameterizedCommand(Command(org.eclipse.cdt.dsf.debug.ui.disassembly.commands.gotoPC,Go to Program Counter,
+		Navigate to current program counter,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@fad73,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.dsf.debug.ui.disassembly.context,,,system)
+Binding(HOME,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.goto.lineStart,Line Start,
+		Go to the start of the line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1446d91,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:56:36.625
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:58:14.333
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:58:14.431
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 13:58:19.349
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 14:03:42.815
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 14:03:42.940
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 14:03:56.341
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}
+
+!ENTRY org.eclipse.ui 4 4 2015-03-03 14:05:46.036
+!MESSAGE Conflicting handlers for com.crt.dsfswv.TraceViews: {com.crt.dsfswv.views.TraceViewsHandler@1113d85} vs {com.crt.dsfswv.views.TraceViewsHandler}

@@ -246,8 +246,8 @@ static const uint8_t g_mode1Regs[] =
 	0x03, 0x02,
 	0x58, 0x64,
 	0x59, 0x50,
-	0x4b, 0x9a,
 	0x4c, 0x09,
+	0x4b, 0x9a,
 	0x3d, 0x9e,
 	0x3e, 0x01,
 	0xbd, 0x50,
@@ -271,8 +271,9 @@ int cam_init()
 	// start in mode 0
 	cam_setRegs(g_baseRegs, sizeof(g_baseRegs));
 	cam_setMode(0);
-	
+#if 0 // Undergrad robotics FUCK OFF
 	g_chirpUsb->registerModule(g_module);
+#endif
 	
 	g_getFrameM0 = g_chirpM0->getProc("getFrame", NULL);
 

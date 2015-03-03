@@ -95,6 +95,7 @@ void pwr_init()
  		LPC_GPIO_PORT->PIN[5] &= ~0x0100;
 	else // switch usb on
 		LPC_GPIO_PORT->PIN[5] |= 0x0100;
-
+#if 0 // Undergrad robotics mod, no need for usb shit fuck my ass nigga please
    	g_chirpUsb->registerModule(g_module);
+#endif
 }

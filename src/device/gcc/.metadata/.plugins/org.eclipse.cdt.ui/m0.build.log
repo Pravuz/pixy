@@ -1,0 +1,6 @@
+13:45:50 **** Incremental Build of configuration Release for project m0 ****
+make -r all 
+make: Nothing to be done for `all'.
+
+13:45:50 Build Finished (took 86ms)
+

@@ -26,14 +26,14 @@ extern Program g_progGreyshades;
 #define Y_CENTER    ((CAM_RES2_HEIGHT-2)/2)
 
 // Regions in a 320x198 frame divided into 3 regions with 4 pixel overlap.
-#define REGIONS_WIDTH			0x140	//320
-#define REGION_AC_HEIGHT		0x44	//68
-#define REGION_B_HEIGHT			0x46	//70
+#define REGIONS_WIDTH			320	//320
+#define REGION_AC_HEIGHT		68	//68
+#define REGION_B_HEIGHT			70	//70
 #define REGION_AC_SIZE			(REGIONS_WIDTH*REGION_AC_HEIGHT)	//21760
 #define REGION_B_SIZE			(REGIONS_WIDTH*REGION_B_HEIGHT)	//22400
-#define REGION_A_OFFSET_Y		0x00	//0
-#define REGION_B_OFFSET_Y		0x40	//64
-#define REGION_C_OFFSET_Y		0x82	//1307
+#define REGION_A_OFFSET_Y		0	//0
+#define REGION_B_OFFSET_Y		64	//64
+#define REGION_C_OFFSET_Y		130	//130
 
 //making room at the end of the 72K SRAM bank for storage.
 #define LAST_REGION_SIZE 		(REGIONS_WIDTH - 2)*(REGION_B_HEIGHT - 2)
@@ -50,28 +50,26 @@ struct DetectedObject { //Each object is theoretically 32bit*3points + 16 = 112b
 				bottomRight.m_x = p.m_x;
 			if (topLeft.m_y < p.m_y)
 				topLeft.m_y = p.m_y;
-			/*else if (bottomRight.m_y > p.m_y)
-			 bottomRight.m_y = p.m_y;*/ // never needed due to how a frame is iterated.
+			else if (bottomRight.m_y > p.m_y)
+				bottomRight.m_y = p.m_y; // never needed due to how a frame is iterated.
 			objPixels++;
 			return true;
 		}
 		return false;
 	}
-
-	DetectedObject() {
-		objPixels = 0;
-		topLeft.m_x = topLeft.m_y = 0;
-		bottomRight.m_x = bottomRight.m_y = 0;
-		midPoint.m_x = midPoint.m_y = 0;
-	}
-
-	DetectedObject(Point16 tL, Point16 bR) {
+	/*
+	 DetectedObject() {
+	 objPixels = 0;
+	 topLeft.m_x = topLeft.m_y = 0;
+	 bottomRight.m_x = bottomRight.m_y = 0;
+	 }
+	 */
+	DetectedObject(Point16 p) {
 		objPixels = 1;
-		topLeft = tL;
-		bottomRight = bR;
+		topLeft = bottomRight = p;
 	}
 	uint16_t objPixels;
-	Point16 topLeft, bottomRight, midPoint;
+	Point16 topLeft, bottomRight;
 };
 
 enum GreyRegion {
@@ -81,6 +79,7 @@ enum GreyRegion {
 int greySetup();
 int greyLoop();
 void greyLoadParams();
+void serialReceive();
 
 class GreyShades {
 public:
@@ -88,16 +87,22 @@ public:
 	~GreyShades();
 	void setParams(const uint8_t deltaP, const uint32_t nOfP);
 	void handleImage();
+	uint32_t spiCallback(uint8_t *buf, uint32_t buflen);
+	void setMute(const bool mute);
 
 private:
 	uint32_t nOfP;
 	uint8_t *m_lastRegion;
 	uint8_t deltaP;
 	std::list<DetectedObject> m_DetectedObjects;
+	std::list<Point16> m_vectorsToCenter;
+	bool m_mutex;
 
 	void convertRawToGrey(const bool compare);
 	void objCalcs();
 	void separateObjects();
+
 };
 
+extern GreyShades *g_gShades;
 #endif

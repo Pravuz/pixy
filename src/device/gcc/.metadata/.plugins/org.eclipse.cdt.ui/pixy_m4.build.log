@@ -1,0 +1,45 @@
+14:03:11 **** Incremental Build of configuration Release for project pixy_m4 ****
+make -r all 
+Building file: ../src/pixy_init.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Users\ouroborus\Dropbox\Bacheloroppgave 2015\Utvikling og Kode\Pixy_3_3_15\gcc\pixy_m4\inc" -I"C:\Users\ouroborus\Dropbox\Bacheloroppgave 2015\Utvikling og Kode\Pixy_3_3_15\gcc\video\inc" -Os -Os -g -w -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/pixy_init.d" -MT"src/pixy_init.o" -MT"src/pixy_init.d" -o "src/pixy_init.o" "../src/pixy_init.cpp"
+Finished building: ../src/pixy_init.cpp
+ 
+Building target: libpixy_m4.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libpixy_m4.a"  ./src/camera.o ./src/chirp.o ./src/crp.o ./src/debug_frmwrk.o ./src/fpu_init.o ./src/ipc_mbx.o ./src/led.o ./src/lpc43xx_adc.o ./src/lpc43xx_cgu.o ./src/lpc43xx_scu.o ./src/lpc43xx_ssp.o ./src/lpc43xx_uart.o ./src/misc.o ./src/param.o ./src/pixy_init.o ./src/platform_config.o ./src/power.o ./src/sccb.o ./src/smlink.o ./src/usbcore.o ./src/usbdesc.o ./src/usbhw.o ./src/usblink.o ./src/usbuser.o   
+c:\nxp\LPCXpresso_7.6.2_326\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libpixy_m4.a
+Finished building target: libpixy_m4.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "libpixy_m4.a" ; # arm-none-eabi-objdump -h -S "libpixy_m4.a" >"libpixy_m4.lss"
+   text	   data	    bss	    dec	    hex	filename
+   1619	     10	     13	   1642	    66a	camera.o (ex libpixy_m4.a)
+   4480	      0	      0	   4480	   1180	chirp.o (ex libpixy_m4.a)
+      4	      0	      0	      4	      4	crp.o (ex libpixy_m4.a)
+    826	      0	      0	    826	    33a	debug_frmwrk.o (ex libpixy_m4.a)
+     72	      0	      0	     72	     48	fpu_init.o (ex libpixy_m4.a)
+    678	      0	      0	    678	    2a6	ipc_mbx.o (ex libpixy_m4.a)
+   1551	      0	     33	   1584	    630	led.o (ex libpixy_m4.a)
+    282	      0	      0	    282	    11a	lpc43xx_adc.o (ex libpixy_m4.a)
+   2845	     68	      0	   2913	    b61	lpc43xx_cgu.o (ex libpixy_m4.a)
+     20	      0	      0	     20	     14	lpc43xx_scu.o (ex libpixy_m4.a)
+    704	      0	      0	    704	    2c0	lpc43xx_ssp.o (ex libpixy_m4.a)
+   1416	      0	      0	   1416	    588	lpc43xx_uart.o (ex libpixy_m4.a)
+    284	      0	      4	    288	    120	misc.o (ex libpixy_m4.a)
+   1904	      0	      1	   1905	    771	param.o (ex libpixy_m4.a)
+    698	      0	     13	    711	    2c7	pixy_init.o (ex libpixy_m4.a)
+    928	      0	      0	    928	    3a0	platform_config.o (ex libpixy_m4.a)
+    130	      0	      0	    130	     82	power.o (ex libpixy_m4.a)
+    558	      0	      0	    558	    22e	sccb.o (ex libpixy_m4.a)
+    246	      0	      0	    246	     f6	smlink.o (ex libpixy_m4.a)
+   1906	      0	      0	   1906	    772	usbcore.o (ex libpixy_m4.a)
+    312	      0	      0	    312	    138	usbdesc.o (ex libpixy_m4.a)
+   1742	      0	     20	   1762	    6e2	usbhw.o (ex libpixy_m4.a)
+    362	      0	     68	    430	    1ae	usblink.o (ex libpixy_m4.a)
+    523	      0	     38	    561	    231	usbuser.o (ex libpixy_m4.a)
+ 
+
+14:03:12 Build Finished (took 682ms)
+
